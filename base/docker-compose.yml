@@ -1,0 +1,15 @@
+---
+version: "3.7"
+services:
+  cntr:
+    image: ${IMAGE_URL:-}
+    init: true
+    entrypoint:
+    - /bin/sh
+    - -c
+    - |
+      tail -f /dev/null
+    working_dir: /root
+    volumes:
+    - ../tmp:/root/tmp:rw
+    network_mode: host
