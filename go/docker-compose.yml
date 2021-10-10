@@ -1,0 +1,17 @@
+---
+version: "3.7"
+services:
+  cntr:
+    image: ${IMAGE_URL:-}
+    init: true
+    entrypoint:
+    - /bin/sh
+    - -c
+    - |
+      bin/install-tools.sh
+      tail -f /dev/null
+    working_dir: /root
+    volumes:
+    - ../bin:/root/bin:ro
+    - ../tmp:/root/tmp:rw
+    network_mode: host
