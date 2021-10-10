@@ -8,3 +8,5 @@ SCRIPT_DIR=`cd $BASE_DIR; pwd`
 #SCRIPT_DIR=$(cd $(dirname $0); pwd)
 echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 echo "PWD: ${PWD}"
+
+${SCRIPT_DIR}/install-git.sh
