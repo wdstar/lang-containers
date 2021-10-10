@@ -10,3 +10,5 @@ echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 echo "PWD: ${PWD}"
 
 ${SCRIPT_DIR}/install-git.sh
+
+echo 'Installing tools done.'
